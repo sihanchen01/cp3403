@@ -73,6 +73,21 @@ Weight after adjustment:
 - normalize data
 - resample instance
 
+### Key Discovery
+- General Health: very good -> good -> excellent -> fair -> poor 
+    - most people does not realize their cardiovascular health: the largest percentage group is from 'good'
+- The majority heart disease patients check up 'within past year' (they visit hospital more often?)
+- Doing exercise does not decrease the risk of heart disease
+- Skin or Other cancers, Depression, Diabetes all have weak correlation with cardiovascular health
+- People having Arthritis are more likely to also have heart disease
+- Male are more likely
+- Age 55+ are significantly under greater risk
+- Height, Weight, BMI do not impact the chance of having heart disease
+- People who smoke are more likely
+- Alcohol, Fruit, Green Vege, Fried Potato do not affect
+
+
+
 ### Clustering
 Significant portion of our attributes(have or don't have heart disease) are nominal data, clustering does not apply to them.
 
