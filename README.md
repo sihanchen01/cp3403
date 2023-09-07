@@ -2,6 +2,11 @@
 > data: [Cardiovascular Diseases Risk Prediction Dataset](https://www.kaggle.com/datasets/alphiree/cardiovascular-diseases-risk-prediction-dataset?resource=download)
 
 ## Notes 
+### Suggestions from Eric 
+- Also consider use clustering with few prominent attributes, to find a cluster that is highly correlated to `heart_disease`.
+- Focus on `recall`, even overall `accuracy` drops a bit.
+- [weka.classifers.meta.CostSensitiveClassifier](https://www.youtube.com/watch?v=V9PNyx5-kxM): "While it can serve as an additional method, it should not be the sole approach (not covered in course material)"
+
 ### Data mining process model (lecture 1.3)
 - PDCA (plan, do, check, action)
 - CRISP-DM (cross industry standard protocol for data mining)
@@ -68,6 +73,13 @@ Weight after adjustment:
     <img src="./image/weight-after.png" width="500" />
 </center>
 
+#### 3. Attribute Selection
+`Supervised` $\rightarrow$ `attribute` $\rightarrow$ `AttributeSelection`
+Narrow down attributes to 4 most closely associated to heart disease.
+<center>
+    <img src="./image/AttributeSelection.png" width="500" />
+</center>
+
 #### More preprocessing ideas to explore
 - numeric transformation
 - normalize data
@@ -92,6 +104,7 @@ Weight after adjustment:
 Significant portion of our attributes(have or don't have heart disease) are nominal data, clustering does not apply to them.
 
 Clustering algorithms such as k-means work best with numerical data.
+
 
 #### K-Means clustering
 Using clustering analysis, we observed the following: individuals in the top 50th percentile (>64) for green vegetable intake demonstrated less likelihood of hearth disease compared to those with lower green vegetable consumption.
