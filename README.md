@@ -73,17 +73,30 @@ Weight after adjustment:
     <img src="./image/weight-after.png" width="500" />
 </center>
 
-#### 3. Attribute Selection
+#### 3. Remove Duplicates
+Removed 79 duplicated instances
+<center>
+    <img src="./image/weka-remove-duplicates.png" width="500" />
+</center>
+
+#### 4. Attribute Selection
 `Supervised` $\rightarrow$ `attribute` $\rightarrow$ `AttributeSelection`
 Narrow down attributes to 4 most closely associated to heart disease.
 <center>
     <img src="./image/AttributeSelection.png" width="500" />
 </center>
 
+#### 4. Class Balancing
+Balance heart_disease class, so the ratio between surveyees who have heart disease and these who don't is 1: 1.
+<center>
+    <img src="./image/weka-undersample.png" width="500" />
+</center>
+
+
 #### More preprocessing ideas to explore
-- numeric transformation
-- normalize data
-- resample instance
+- [x] numeric transformation: `Discretize`
+- [x] resample instance: `SpreadSubsample`
+- [ ] ? normalize data
 
 ### Key Discovery
 - General Health: very good -> good -> excellent -> fair -> poor 
